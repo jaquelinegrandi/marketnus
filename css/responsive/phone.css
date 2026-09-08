@@ -1,0 +1,84 @@
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    :root {
+
+        --section-padding: 4.5rem;
+
+        --section-padding-small: 4rem;
+
+        --space-4xl: 4rem;
+
+        --space-5xl: 5rem;
+
+    }
+
+
+    .container,
+    .container-wide,
+    .section-container {
+
+        width: min(90%, var(--container-width));
+
+    }
+
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .btn {
+
+        min-height: 44px;
+
+    }
+
+
+    .section-subtitle {
+
+        margin-bottom: 1rem;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    :root {
+
+        --section-padding: 3.5rem;
+
+        --section-padding-small: 3rem;
+
+    }
+
+
+    .container,
+    .container-wide,
+    .section-container {
+
+        width: min(88%, var(--container-width));
+
+    }
+
+
+    .btn {
+
+        width: 100%;
+
+    }
+
+}
