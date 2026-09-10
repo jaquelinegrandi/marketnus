@@ -22,93 +22,7 @@
     <link rel="stylesheet" href="css/responsive/phone.css">
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="container">
-
-            <a href="/"><img src="assets/logos/logo-triangulo.png" alt="Marketnus Logo"></a>
-
-            <button class="menu-toggle" id="open-menu" aria-label="Open menu">
-                <i class="bi bi-list"></i>
-            </button>
-
-            <nav class="navbar" id="navbar">
-
-                <button class="close-menu">
-                    <i class="bi bi-x-lg"></i>
-                </button>
-
-                <ul>
-                    <li class="navbar-item navbar-item-home">
-                        <a href="/" class="navbar-link">
-                            <span class="icon">
-                                <i class="bi bi-house-fill navigation-link-icon" aria-hidden="true"></i>
-                            </span>
-
-                            <span class="text">Inicio</span>
-                        </a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="/sobre" class="navbar-link">
-                            <span class="icon">
-                                <i class="bi bi-people-fill" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">Sobre nosotros</span>
-                        </a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="/cursos" class="navbar-link">
-                            <span class="icon">
-                                <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">Cursos</span>
-                        </a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="/bootcamps" class="navbar-link">
-                            <span class="icon">
-                                <i class="bi bi-rocket-takeoff-fill" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">Bootcamps</span>
-                        </a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="/blog" class="navbar-link">
-                            <span class="icon">
-                                <i class="bi bi-journal-text" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">Blog</span>
-                        </a>
-                    </li>
-
-                    <li class="navigation-actions">
-
-                        <a href="/iniciar-sesion" class="navigation-login">
-                            <span class="icon">
-                                <i class="bi bi-person" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">Iniciar sesión</span>
-                        </a>
-
-                        <a href="/registro" class="navigation-register">
-                            <span class="icon">
-                                <i class="bi bi-arrow-right" aria-hidden="true"></i>
-                            </span>
-                            <span class="text">Registrarse</span>
-                        </a>
-                    </li>
-
-                    <div class="indicator" aria-hidden="true"></div>
-
-
-                </ul>
-            </nav>
-        </div>
-
-    </header>
+    <div id="header"></div>
 
     <main>
         <section class="hero" id="hero" aria-labelledby="hero-title">
@@ -162,7 +76,7 @@
         </section>
 
         <section class="path-section" id="path-section">
-            <div class="section-container path container">
+            <div class="container path container">
                 <div class="path-intro">
                     <div class="section-subtitle">
                         <span class="subtitle-marker" aria-hidden="true"></span>
@@ -237,7 +151,7 @@
                             </span>
                         </a>
 
-                        <a href="/cursos/marca/" class="path-orbit-item path-orbit-item--seo">
+                        <a href="/cursos/marca/" class="path-orbit-item path-orbit-item--marca">
 
                             <span class="path-orbit-point"></span>
                             <span class="path-orbit-label">
@@ -245,7 +159,7 @@
                             </span>
                         </a>
 
-                        <a href="/cursos/transformación-digital/" class="path-orbit-item path-orbit-item--seo">
+                        <a href="/cursos/transformación-digital/" class="path-orbit-item path-orbit-item--transformacion-digital">
 
                             <span class="path-orbit-point"></span>
                             <span class="path-orbit-label">
@@ -292,7 +206,6 @@
                 <div class="courses-grid">
 
 
-                    <!-- COURSE 01 -->
                     <article class="course-card">
 
                         <a href="/cursos/posiciona-tu-marca/" class="course-card-link">
@@ -357,7 +270,6 @@
 
                     </article>
 
-                    <!-- COURSE 02 -->
                     <article class="course-card">
 
                         <a
@@ -424,7 +336,6 @@
 
                     </article>
 
-                    <!-- COURSE 04 -->
                     <article class="course-card">
 
                         <a
@@ -502,7 +413,7 @@
 
                                     <span
                                         class="course-category course-category--purple">
-                                        CONTENT
+                                        Content
                                     </span>
 
                                 </div>
@@ -686,8 +597,6 @@
 
                 </div>
 
-
-                <!-- ARTÍCULOS -->
                 <div class="articles-wrapper">
 
                     <div class="articles-grid">
@@ -697,8 +606,6 @@
 
                     </div>
 
-
-                    <!-- VER MÁS -->
                     <a
                         href="/blog/"
                         class="articles-next"
@@ -771,293 +678,8 @@
 
     </main>
 
-    <footer>
-        <div class="footer-container">
-
-
-            <!-- BRAND -->
-            <div class="footer-brand">
-
-                <a
-                    href="/"
-                    class="footer-brand-link"
-                    aria-label="Marketnus - Inicio"
-                >
-
-                    <img
-                        src="/assets/images/marketnus-logo.svg"
-                        class="footer-logo"
-                        alt="Marketnus"
-                        width="160"
-                        height="50"
-                        loading="lazy"
-                    >
-
-                </a>
-
-
-                <p class="footer-tagline">
-                    Aprende. Conecta. Transforma.
-                </p>
-
-
-                <div class="footer-socials">
-
-                    <a
-                        href="https://www.instagram.com/"
-                        class="footer-social"
-                        aria-label="Instagram de Marketnus"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="bi bi-instagram" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                        href="https://www.tiktok.com/"
-                        class="footer-social"
-                        aria-label="TikTok de Marketnus"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="bi bi-tiktok" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/"
-                        class="footer-social"
-                        aria-label="LinkedIn de Marketnus"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="bi bi-linkedin" aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                        href="https://www.youtube.com/"
-                        class="footer-social"
-                        aria-label="YouTube de Marketnus"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="bi bi-youtube" aria-hidden="true"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- NAVIGATION -->
-            <div class="footer-column">
-
-                <h2 class="footer-column-title">
-                    Navegación
-                </h2>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="/sobre-nosotros/">
-                            Sobre nosotros
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/cursos/">
-                            Cursos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/bootcamps/">
-                            Bootcamps
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/para-empresas/">
-                            Para empresas
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/blog/">
-                            Blog
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <!-- HELP -->
-            <div class="footer-column">
-
-                <h2 class="footer-column-title">
-                    Ayuda
-                </h2>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="/faqs/">
-                            FAQs
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/soporte/">
-                            Centro de soporte
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/contacto/">
-                            Contacto
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <!-- LEGAL -->
-            <div class="footer-column">
-
-                <h2 class="footer-column-title">
-                    Legal
-                </h2>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="/terminos-y-condiciones/">
-                            Términos y condiciones
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/politica-de-privacidad/">
-                            Política de privacidad
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/politica-de-cookies/">
-                            Política de cookies
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <!-- NEWSLETTER -->
-            <div class="footer-newsletter">
-
-                <h2 class="footer-column-title">
-                    No te pierdas nada
-                </h2>
-
-
-                <p class="footer-newsletter-description">
-                    Suscríbete y recibe novedades,
-                    recursos y ofertas exclusivas.
-                </p>
-
-
-                <form
-                    class="newsletter-form"
-                    action="/suscribirse/"
-                    method="post"
-                >
-
-                    <label
-                        for="newsletter-email"
-                        class="visually-hidden"
-                    >
-                        Tu email
-                    </label>
-
-
-                    <input
-                        type="email"
-                        id="newsletter-email"
-                        name="email"
-                        class="newsletter-input"
-                        placeholder="Tu email"
-                        autocomplete="email"
-                        required
-                    >
-
-
-                    <button
-                        type="submit"
-                        class="newsletter-submit"
-                        aria-label="Suscribirme"
-                    >
-                        <i
-                            class="bi bi-arrow-right"
-                            aria-hidden="true"
-                        ></i>
-                    </button>
-
-                </form>
-
-
-                <div class="footer-newsletter-note">
-
-                    <span
-                        class="footer-newsletter-dot"
-                        aria-hidden="true"
-                    ></span>
-
-                    <span>
-                        Tu próximo movimiento está aquí.
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- FOOTER BOTTOM -->
-
-        <div class="footer-bottom">
-
-            <p class="footer-copyright">
-                © 2026 Marketnus. Todos los derechos reservados.
-            </p>
-
-
-            <div class="footer-bottom-links">
-
-                <a href="/politica-de-privacidad/">
-                    Privacidad
-                </a>
-
-                <a href="/politica-de-cookies/">
-                    Cookies
-                </a>
-
-                <a href="/accesibilidad/">
-                    Accesibilidad
-                </a>
-
-            </div>
-
-        </div>
-
-
-    </footer>
-
+    <div id="footer"></div>
     <script src="js/main.js"></script>
+    <script src="js/sections.js"></script>
 </body>
 </html>

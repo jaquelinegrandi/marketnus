@@ -898,12 +898,11 @@ color: var(--black);
     position: relative;
 
     width: min(92%, var(--container-width));
-
     margin: 0 auto;
 
     display: grid;
-
-    grid-template-columns: 38% 62%;
+    grid-template-columns: minmax(0,38%) minmax(0,62%);
+    grid-template-rows: 1fr;
 
     align-items: center;
 
@@ -912,6 +911,8 @@ color: var(--black);
 
 .path-intro {
     position: relative;
+    grid-column: 1;
+    grid-row: 1;
 
     z-index: 5;
 
@@ -1037,3 +1038,424 @@ color: var(--black);
 
 
 /*ORBITA*/
+
+.path-orbit {
+    position: relative;
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 140%;
+    height: 150px;
+    bottom: 220px;
+
+    isolation: isolate;
+
+}
+
+/*SYSTEM*/
+
+.path-orbit-system {
+    position: relative;
+
+    width: min(100%, 650px);
+    aspect-ratio: 1/.72;
+
+    margin: 0 auto;
+}
+
+.path-orbit-ring {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    border: 1px solid rgba(0,0,0,.14);
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+}
+
+
+/*EXTERNAL ORBIT*/
+
+.path-orbit-ring--outer {
+    width: 100%;
+    height: 64%;
+}
+
+
+/*CENTRAL ORBIT*/
+
+.path-orbit-ring--middle {
+    width: 76%;
+    height: 50%;
+
+    border-color: rgba(184,47,254,.20);
+}
+
+/*INNER ORBIT*/
+
+.path-orbit-ring--inner {
+    width: 48%;
+    height: 32%;
+
+    border-color: rgba(168, 255, 0, .45);
+}
+
+
+/*PUNTOS DECORACIÓN, NO <a>*/
+
+.path-orbit-ring::before,
+.path-orbit-ring::after {
+    content: "";
+
+    position: absolute;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+/*fuera*/
+.path-orbit-ring--outer::before {
+    top: 50%;
+    left: -3px;
+
+    transform: translateY(-50%);
+
+    background: var(--green-lime);
+
+}
+
+.path-orbit-ring--outer::after {
+    top: 50%;
+    right: -3px;
+
+    transform: translateY(-50%);
+
+    background: var(--purple);
+}
+
+/*medio*/
+.path-orbit-ring--middle::before {
+    top: 17px;
+    left: 22%;
+
+    background: var(--purple);
+}
+
+.path-orbit-ring--middle::after {
+    right: 22%;
+    bottom: 17px;
+
+    background: var(--green-lime);
+}
+
+/*inner*/
+.path-orbit-ring--inner::before {
+    top: 50%;
+    left: -3px;
+
+    width: 5px;
+    height: 5px;
+
+    transform: translateY(-50%);
+
+    background: var(--green-lime);
+}
+
+.path-orbit-ring--inner::after {
+    top: 50%;
+    right: -3px;
+
+    width: 5px;
+    height: 5px;
+
+    transform: translateY(-50%);
+
+    background: var(--purple);
+}
+
+/*logo*/
+
+.path-orbit-center {
+    position: absolute;
+    display: flex;
+
+    top: 50%;
+    left: 50%;
+
+    width: 60px;
+    height: 60px;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: translate(-50%, -50%);
+
+    background: transparent;
+    box-shadow: none;
+
+    pointer-events: none;
+    z-index: 10;
+}
+
+.path-orbit-logo {
+    display: flex;
+
+    width: 50px;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    pointer-events: auto;
+}
+
+.path-orbit-logo img {
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/*efecto hover logo*/
+
+.path-orbit-logo:hover {
+    transform: scale(1.08);
+}
+
+
+/*elementos que orbitan*/
+
+.path-orbit-item {
+    position: absolute;
+    display: flex;
+    
+    top: 0;
+    left: 0;
+
+    width: max-content;
+    gap: .6rem;
+
+    align-items: center;
+    
+    color: var(--black);
+    text-decoration: none;
+    
+    z-index: 20;
+
+    /*v texto horizontal, solo se desplaza alrededor de la órbita v*/
+
+    offset-rotate: 0deg;
+
+    /*v el centro del elemento se coloca sobre la linea v*/
+
+    offset-anchor: 50% 50%;
+
+    /*v movimiento lento v*/
+
+    animation-name: marketnusOrbit;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    will-change: offset-distance;
+}
+
+
+/* orbita exterior*/
+
+.path-orbit-item--ia {
+    offset-path: ellipse(
+    50% 32%
+    at 50% 50%
+    );
+
+    animation-duration: 120s;
+    animation-delay: -8.4s;
+
+}
+
+
+.path-orbit-item--transformacion-digital {
+    offset-path: ellipse(
+        50% 32%
+        at 50% 50%
+    );
+
+    animation-duration: 120s;
+    animation-delay: -76s;
+}
+
+
+/*orbita central*/
+
+.path-orbit-item--marketing {
+    offset-path: ellipse(
+        38% 25%
+        at 50% 50%
+    );
+
+    animation-duration: 105s;
+    animation-delay: -25.2s;
+}
+
+.path-orbit-system > a:nth-child(9) {
+    offset-path: ellipse(
+        38% 25%
+        at 50% 50%
+    );
+
+    animation-duration: 105s;
+    animation-delay: -79.8s;
+}
+
+/*orbita interior*/
+
+.path-orbit-item--ecommerce {
+    offset-path: ellipse(
+        24% 16%
+        at 50% 50%
+    );
+
+    animation-duration: 90s;
+    animation-delay: -7.2s;
+}
+
+
+.path-orbit-system > a:nth-child(8) {
+    offset-path: ellipse(
+        24% 16%
+        at 50% 50%
+    );
+
+    animation-duration: 90s;
+    animation-delay: -51.3s;
+}
+
+
+/*posicion inicial*/
+
+.path-orbit-item--ia {
+    animation-delay: 0s;
+}
+
+.path-orbit-point {
+    position: relative;
+
+    width: 10px;
+    height: 10px;
+
+    flex: 0 0 10px;
+
+    border-radius: 50%;
+
+    background: var(--green-lime);
+
+    box-shadow:
+        0 0 0 4px rgba(168, 255, 0, .13);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.path-orbit-item--marketing .path-orbit-point,
+.path-orbit-item--seo .path-orbit-point,
+.path-orbit-item--ia .path-orbit-point
+{
+    background: var(--purple);
+
+    box-shadow:
+        0 0 0 4px rgba(184, 47, 254, .12);
+}
+
+
+/*etiquetas*/
+
+
+.path-orbit-label {
+    display: block;
+
+    font-family: var(--font-body);
+    font-size: .8rem;
+    font-weight: var(--fw-semibold);
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    color: var(--black);
+
+    transition:
+        transform .25s ease,
+        color .25s ease;
+}
+
+
+/*hover sobre elementos*/
+
+.path-orbit-item:hover {
+    z-index: 100;
+}
+
+.path-orbit-item:hover .path-orbit-point {
+    transform: scale(1.35);
+
+    box-shadow:
+        0 0 0 6px rgba(168, 255, 0, .15);
+}
+
+.path-orbit-item--marketing:hover .path-orbit-point,
+.path-orbit-item--seo:hover .path-orbit-point {
+    box-shadow:
+        0 0 0 6px rgba(184, 47, 254, .15);
+}
+
+.path-orbit-item:hover .path-orbit-label {
+    transform: translateX(3px);
+}
+
+
+/*pausar sistema al hacer hover*/
+
+.path-orbit:hover .path-orbit-item {
+    animation-play-state: paused;
+}
+
+
+/*ANIMACION ORBITA*/
+
+@keyframes marketnusOrbit {
+
+    from {
+        offset-distance: 0%;
+    }
+
+    to {
+        offset-distance: 100%;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .path-orbit-item {
+        animation: none;
+    }
+
+}
+
+
+/*COURSES*/
