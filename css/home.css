@@ -610,7 +610,7 @@ color: var(--black);
 
     background-color: var(--beige);
 
-    background-image: url("assets/images/hero-1.png");
+    background-image: url("../assets/images/hero-1.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
