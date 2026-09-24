@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    loadSection('header', '/header.html');
-    loadSection('footer', '/footer.html');
+    loadSection('header', 'header.html');
+    loadSection('footer', 'footer.html');
 
 });
 
