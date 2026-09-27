@@ -90,7 +90,7 @@
 
     --fs-display: clamp(4rem, 8vw, 8rem);
     --fs-h1: clamp(3rem, 6vw, 6rem);
-    --fs-h2: clamp(2.3rem, 4vw, 4rem);
+    --fs-h2: clamp(2.3rem, 3vw, 3rem);
     --fs-h3: clamp(1.4rem, 2vw, 1.8rem);
     --fs-h4: 1.25rem;
 

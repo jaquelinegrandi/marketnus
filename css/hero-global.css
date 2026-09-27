@@ -197,7 +197,7 @@
 
     background-image: url("../assets/images/hero-global.png");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: right right;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -303,88 +303,3 @@
 
     line-height: 1.55;
 }
-
-/*ABOUT*/
-
-.about-story {
-   padding: 4rem 0;
-   background: var(--beige-light);
-}
-
-.about-story-container {
-    display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr);
-    gap: clamp(4rem, 9vw, 10rem);
-    align-items: center;
-}
-
-.about-story-content {
-    max-width: 850px;
-}
-
-.about-story-title {
-    max-width: 850px;
-    margin-top: 1.3rem;
-    font-size: var(--fs-h2);
-    line-height: 1;
-}
-
-.about-story-title span {
-    color: var(--purple);
-}
-
-.about-story-description {
-    max-width: 680px;
-    margin-top: 2rem;
-}
-
-.about-story-description p {
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: var(--gray-dark);
-}
-
-
-.about-story-nous {
-    position: relative;
-    padding: 2.5rem 0 2.5rem 2.5rem;
-    border-left: 1px solid rgba(0, 0, 0, .2);
-}
-
-.about-story-nous-label {
-    display: block;
-    margin-bottom: 1rem;
-    font-family: var(--font-heading);
-    font-size: .9rem;
-    font-weight: var(--fw-bold);
-}
-
-.about-story-nous-description {
-    max-width: 420px;
-    font-size: .95rem;
-    line-height: 1.7;
-    color: var(--gray);
-}
-
-.about-story-nous-word {
-    margin-top: 2rem;
-    font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 4vw, 4rem);
-    font-weight: var(--fw-extrabold);
-    line-height: 1;
-    letter-spacing: -.06em;
-}
-
-.about-story-nous-subtitle {
-    display: block;
-    margin-top: .55rem;
-    font-size: .65rem;
-    font-weight: var(--fw-semibold);
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: var(--gray);
-}
-
-
-/*UNIVERSE SECTION*/
