@@ -266,7 +266,7 @@
     color: var(--gray);
 }
 
-.about-universe__description {
+.about-universe-description {
     max-width: 520px;
     margin-top: 2rem;
     color: var(--beige);
@@ -763,7 +763,7 @@
     background: var(--green-lime);
 }
 
-.team-member--purple .team-member-accent {
+.team-member-purple .team-member-accent {
     background: var(--purple);
 }
 

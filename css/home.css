@@ -2216,7 +2216,7 @@
     color: var(--green-lime);
 }
 
-.cta-section .button--primary {
+.cta-section .btn-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -2244,14 +2244,14 @@
         box-shadow var(--transition);
 }
 
-.cta-section .button--primary i {
+.cta-section .btn-primary i {
     font-size: 1rem;
 
     transition: transform var(--transition);
 }
 
 
-.cta-section .button--primary:hover {
+.cta-section .btn-primary:hover {
     transform: translateY(-3px);
 
     background: var(--white);
@@ -2260,7 +2260,7 @@
 }
 
 
-.cta-section .button--primary:hover i {
+.cta-section .btn-primary:hover i {
     transform: translateX(4px);
 }
 
@@ -2297,7 +2297,7 @@
     opacity: .95;
 }
 
-.cta-decoration--left {
+.cta-decoration-left {
     left: -20px;
     top: 50%;
 
@@ -2315,7 +2315,7 @@
 }
 
 
-.cta-decoration--left span:nth-child(2) {
+.cta-decoration-left span:nth-child(2) {
     left: 150px;
     top: 15px;
 
@@ -2323,7 +2323,7 @@
     height: 13px;
 }
 
-.cta-decoration--right {
+.cta-decoration-right {
     right: -20px;
     top: 50%;
 
@@ -2333,7 +2333,7 @@
 }
 
 
-.cta-decoration--right span:first-child {
+.cta-decoration-right span:first-child {
     left: 0;
     top: 45px;
 
@@ -2343,7 +2343,7 @@
 }
 
 
-.cta-decoration--right span:nth-child(2) {
+.cta-decoration-right span:nth-child(2) {
     left: 150px;
     top: 15px;
 
