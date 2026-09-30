@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Registrar</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/registro-login.css">
+
+    <link rel="stylesheet" href="css/responsive/phone.css">
+</head>
+<body>
+    <div class="auth-form">
+
+    <div class="auth-tabs">
+
+        <button
+            type="button"
+            class="auth-tab is-active"
+            data-auth-tab="register"
+        >
+            Crear cuenta
+        </button>
+
+        <button
+            type="button"
+            class="auth-tab"
+            data-auth-tab="login"
+        >
+            Iniciar sesión
+        </button>
+
+    </div>
+
+
+    <div class="auth-content">
+
+        <!-- REGISTRO -->
+
+        <div
+            class="auth-panel is-active"
+            id="register"
+        >
+
+            <div class="auth-heading">
+
+                <span class="auth-label">
+                    Marketnus
+                </span>
+
+                <h1>
+                    Empieza tu
+                    <span>movimiento.</span>
+                </h1>
+
+                <p>
+                    Crea tu cuenta y empieza a construir
+                    nuevas oportunidades.
+                </p>
+
+            </div>
+
+
+            <form
+                id="register-form"
+                class="auth-form-fields"
+            >
+
+                <div class="auth-row">
+
+                    <div class="field-wrap">
+
+                        <label for="register-name">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="register-name"
+                            name="name"
+                            placeholder="Tu nombre"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="field-wrap">
+
+                        <label for="register-surname">
+                            Apellidos
+                        </label>
+
+                        <input
+                            type="text"
+                            id="register-surname"
+                            name="surname"
+                            placeholder="Tus apellidos"
+                            autocomplete="family-name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="field-wrap">
+
+                    <label for="register-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        name="email"
+                        placeholder="tu@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field-wrap">
+
+                    <label for="register-password">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        name="password"
+                        placeholder="Crea una contraseña"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary auth-submit"
+                >
+                    <span>Crear cuenta</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <div
+            class="auth-panel"
+            id="login"
+        >
+
+            <div class="auth-heading">
+
+                <span class="auth-label">
+                    Bienvenido de nuevo
+                </span>
+
+                <h1>
+                    Tu próximo
+                    <span>movimiento.</span>
+                </h1>
+
+                <p>
+                    Accede a tu cuenta para continuar
+                    donde lo dejaste.
+                </p>
+
+            </div>
+
+
+            <form
+                id="login-form"
+                class="auth-form-fields"
+            >
+
+                <div class="field-wrap">
+
+                    <label for="login-email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        name="email"
+                        placeholder="tu@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field-wrap">
+
+                    <label for="login-password">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        name="password"
+                        placeholder="Tu contraseña"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="auth-forgot">
+
+                    <a href="/recuperar-password/">
+                        ¿Has olvidado tu contraseña?
+                    </a>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary auth-submit"
+                >
+                    <span>Iniciar sesión</span>
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
+
