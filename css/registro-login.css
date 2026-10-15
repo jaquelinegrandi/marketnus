@@ -442,3 +442,237 @@
 .auth-submit:active {
     transform: translateY(0);
 }
+
+
+
+
+/* =========================================
+   RESPONSIVE — AUTH FORM
+========================================= */
+
+.auth-form,
+.auth-content,
+.auth-panel,
+.auth-form-fields,
+.auth-row,
+.field-wrap {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.auth-form input,
+.auth-form button {
+    box-sizing: border-box;
+}
+
+/* =========================================
+   TABLETS — 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    .auth-form {
+        width: min(100%, 560px);
+        border-radius: var(--radius-lg);
+    }
+
+    .auth-tabs {
+        padding: 0.4rem;
+    }
+
+    .auth-tab {
+        min-height: 48px;
+        padding: 0.75rem 0.6rem;
+        font-size: 0.82rem;
+    }
+
+    .auth-panel {
+        padding: clamp(1.75rem, 5vw, 2.5rem);
+    }
+
+    .auth-heading {
+        margin-bottom: 2rem;
+    }
+
+    .auth-heading h1 {
+        font-size: clamp(2.4rem, 6vw, 3.5rem);
+        line-height: 1;
+        overflow-wrap: break-word;
+    }
+
+    .auth-heading p {
+        max-width: 100%;
+        font-size: 0.92rem;
+    }
+
+    .auth-row {
+        gap: 0.85rem;
+    }
+
+    .field-wrap input {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .auth-submit {
+        min-height: 54px;
+    }
+}
+
+/* =========================================
+   MÓVILES — 600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .auth-form {
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
+
+    .auth-tabs {
+        gap: 0.25rem;
+        padding: 0.35rem;
+    }
+
+    .auth-tab {
+        min-width: 0;
+        min-height: 46px;
+        padding: 0.7rem 0.4rem;
+        font-size: 0.78rem;
+        overflow-wrap: break-word;
+    }
+
+    .auth-panel {
+        padding: 1.5rem;
+    }
+
+    .auth-heading {
+        margin-bottom: 1.75rem;
+    }
+
+    .auth-label {
+        margin-bottom: 1rem;
+        font-size: var(--fs-xs);
+    }
+
+    .auth-heading h1 {
+        font-size: clamp(2.2rem, 9vw, 3.2rem);
+        line-height: 1;
+        letter-spacing: -0.035em;
+    }
+
+    .auth-heading p {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .auth-form-fields {
+        gap: 1.1rem;
+    }
+
+    /* Apilar campos de nombre y apellidos */
+    .auth-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.1rem;
+    }
+
+    .field-wrap {
+        gap: 0.45rem;
+    }
+
+    .field-wrap label {
+        font-size: 0.85rem;
+    }
+
+    .field-wrap input {
+        width: 100%;
+        height: 50px;
+        padding-inline: 0.9rem;
+        font-size: 16px;
+    }
+
+    .auth-forgot {
+        margin-top: -0.25rem;
+    }
+
+    .auth-forgot a {
+        font-size: 0.82rem;
+    }
+
+    .auth-submit {
+        width: 100%;
+        min-height: 52px;
+        margin-top: 0.25rem;
+        padding-inline: 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* =========================================
+   MÓVILES PEQUEÑOS — 380px
+========================================= */
+
+@media (max-width: 380px) {
+
+    .auth-panel {
+        padding: 1.15rem;
+    }
+
+    .auth-tabs {
+        padding: 0.3rem;
+    }
+
+    .auth-tab {
+        min-height: 44px;
+        padding-inline: 0.25rem;
+        font-size: 0.73rem;
+    }
+
+    .auth-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .auth-heading h1 {
+        font-size: 2.15rem;
+    }
+
+    .auth-heading p {
+        font-size: 0.87rem;
+    }
+
+    .auth-form-fields,
+    .auth-row {
+        gap: 1rem;
+    }
+
+    .field-wrap input {
+        padding-inline: 0.75rem;
+    }
+
+    .auth-submit {
+        gap: 0.5rem;
+        font-size: 0.82rem;
+    }
+}
+
+/* =========================================
+   ACCESIBILIDAD — MOVIMIENTO REDUCIDO
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .auth-tab,
+    .field-wrap input,
+    .auth-forgot a,
+    .auth-submit,
+    .auth-submit i {
+        transition: none !important;
+    }
+
+    .auth-submit:hover,
+    .auth-submit:hover i {
+        transform: none;
+    }
+}

@@ -303,3 +303,190 @@
 
     line-height: 1.55;
 }
+
+
+
+/* =========================================
+   RESPONSIVE — GLOBAL HERO
+   ========================================= */
+
+/* Pantallas medianas y portátiles */
+@media (max-width: 1200px) {
+
+    .global-hero {
+        min-height: 460px;
+        background-position: center right;
+        background-attachment: scroll;
+    }
+
+    .global-hero-container {
+        min-height: 460px;
+        width: 90%;
+    }
+
+    .global-hero-content {
+        width: 58%;
+        max-width: 650px;
+        margin-top: 2rem;
+    }
+
+    .global-hero-title {
+        font-size: clamp(3.2rem, 5.5vw, 4.5rem);
+    }
+
+    .global-hero-description {
+        max-width: 460px;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .global-hero {
+        min-height: 440px;
+        background-position: 65% center;
+        background-attachment: scroll;
+    }
+
+    .global-hero-container {
+        width: 90%;
+        min-height: 440px;
+    }
+
+    .global-hero-content {
+        width: 65%;
+        max-width: 560px;
+        margin-top: 1rem;
+    }
+
+    .section-subtitle {
+        margin-bottom: 1.2rem;
+        font-size: 0.7rem;
+        gap: 0.5rem;
+    }
+
+    .global-hero-title {
+        font-size: clamp(2.8rem, 6vw, 4rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+    }
+
+    .global-hero-description {
+        max-width: 420px;
+        margin-top: 1.4rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================
+   MÓVILES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .global-hero {
+        min-height: auto;
+        background-position: 62% center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    .global-hero-container {
+        width: 88%;
+        min-height: 480px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        align-items: center;
+    }
+
+    .global-hero-content {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .section-marker-dot {
+        width: 24px;
+    }
+
+    .section-marker-dot::before {
+        width: 10px;
+        height: 10px;
+        left: -8px;
+        top: 4px;
+    }
+
+    .section-subtitle {
+        margin-bottom: 1rem;
+        gap: 0.4rem;
+        font-size: 0.65rem;
+        letter-spacing: 0.07em;
+    }
+
+    .global-hero-title {
+        max-width: 100%;
+        font-size: clamp(2.6rem, 11vw, 3.8rem);
+        line-height: 1;
+        letter-spacing: -0.045em;
+        overflow-wrap: break-word;
+    }
+
+    .global-hero-title span {
+        display: block;
+    }
+
+    .global-hero-description {
+        max-width: 100%;
+        margin-top: 1.3rem;
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================
+   MÓVILES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .global-hero-container {
+        width: 90%;
+        min-height: 440px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .global-hero-title {
+        font-size: clamp(2.2rem, 10.5vw, 2.8rem);
+        line-height: 1.02;
+    }
+
+    .global-hero-description {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .section-subtitle {
+        font-size: 0.6rem;
+    }
+}
+
+
+/* =========================================
+   ACCESIBILIDAD
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .global-hero {
+        background-attachment: scroll;
+    }
+}

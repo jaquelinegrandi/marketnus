@@ -351,3 +351,231 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--green);
 }
+
+
+
+/* =========================================
+   RESPONSIVE GLOBAL — MARKETNUS
+   ========================================= */
+
+
+/* Evitar desbordamientos horizontales */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: clip;
+}
+
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+}
+
+
+/* =========================================
+   TABLETS Y PORTÁTILES
+   ========================================= */
+
+@media (max-width: 1024px) {
+
+    :root {
+        --container-width: 1400px;
+
+        --fs-display: clamp(3.5rem, 7vw, 6rem);
+        --fs-h1: clamp(3rem, 5.5vw, 4.5rem);
+        --fs-h2: clamp(2.1rem, 4vw, 3rem);
+        --fs-h3: clamp(1.3rem, 2.5vw, 1.7rem);
+
+        --section-padding: clamp(4rem, 8vw, 6rem);
+        --section-padding-small: clamp(3rem, 6vw, 4.5rem);
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    :root {
+        --fs-display: clamp(3rem, 9vw, 4.8rem);
+        --fs-h1: clamp(2.6rem, 8vw, 3.8rem);
+        --fs-h2: clamp(2rem, 6vw, 2.8rem);
+        --fs-h3: clamp(1.25rem, 4vw, 1.6rem);
+        --fs-h4: 1.15rem;
+
+        --fs-large: 1.05rem;
+        --fs-base: 0.95rem;
+        --fs-small: 0.85rem;
+        --fs-xs: 0.72rem;
+
+        --section-padding: 4rem;
+        --section-padding-small: 3rem;
+
+        --space-2xl: 2.5rem;
+        --space-3xl: 3.5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    body {
+        font-size: var(--fs-base);
+        line-height: 1.65;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    img {
+        height: auto;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================
+   MÓVILES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    :root {
+        --fs-display: clamp(2.7rem, 12vw, 4rem);
+        --fs-h1: clamp(2.4rem, 10vw, 3.4rem);
+        --fs-h2: clamp(1.9rem, 8vw, 2.6rem);
+        --fs-h3: clamp(1.2rem, 5vw, 1.5rem);
+        --fs-h4: 1.1rem;
+
+        --fs-large: 1rem;
+        --fs-base: 0.9rem;
+        --fs-small: 0.8rem;
+        --fs-xs: 0.68rem;
+
+        --section-padding: 3.25rem;
+        --section-padding-small: 2.5rem;
+
+        --space-lg: 1.25rem;
+        --space-xl: 1.5rem;
+        --space-2xl: 2rem;
+        --space-3xl: 3rem;
+    }
+
+    html {
+        font-size: 100%;
+        scroll-behavior: auto;
+    }
+
+    body {
+        font-size: var(--fs-base);
+        line-height: 1.65;
+    }
+
+    .container {
+        width: 88%;
+    }
+
+    section {
+        scroll-margin-top: 80px;
+    }
+
+    p {
+        overflow-wrap: break-word;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+    }
+
+    :focus-visible {
+        outline-offset: 3px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+}
+
+
+/* =========================================
+   MÓVILES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    :root {
+        --fs-display: 2.5rem;
+        --fs-h1: 2.25rem;
+        --fs-h2: 1.8rem;
+        --fs-h3: 1.15rem;
+        --fs-h4: 1.05rem;
+
+        --fs-large: 0.95rem;
+        --fs-base: 0.875rem;
+        --fs-small: 0.78rem;
+        --fs-xs: 0.65rem;
+
+        --section-padding: 2.75rem;
+        --section-padding-small: 2.25rem;
+
+        --space-2xl: 1.75rem;
+        --space-3xl: 2.5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    body {
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================
+   ACCESIBILIDAD
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

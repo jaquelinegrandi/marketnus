@@ -1,84 +1,205 @@
+
+
 /* =========================================================
-   RESPONSIVE — MOBILE
+   MÓVIL
    ========================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-    :root {
+    /* HEADER */
 
-        --section-padding: 4.5rem;
+    .header {
+        padding: 10px 0;
+    }
 
-        --section-padding-small: 4rem;
+    .header .container {
+        width: calc(100% - 24px);
+        min-height: 64px;
 
-        --space-4xl: 4rem;
+        padding: 0 1rem;
 
-        --space-5xl: 5rem;
+        border-radius: 20px;
+    }
 
+    .header > .container > a img {
+        height: 30px;
+    }
+
+    .menu-toggle,
+    .close-menu {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-toggle.active {
+    display: none;
+    }
+
+    .navbar {
+        width: min(340px, 88vw);
+        padding: 5.5rem 1.25rem 1.5rem;
     }
 
 
-    .container,
-    .container-wide,
-    .section-container {
+    /* FOOTER */
 
-        width: min(90%, var(--container-width));
+    .footer-container {
+        width: calc(100% - 40px);
 
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 2rem 1.25rem;
+
+        padding: 3rem 0 2rem;
     }
 
-
-    .grid-2,
-    .grid-3,
-    .grid-4 {
-
-        grid-template-columns: 1fr;
-
+    .footer-brand {
+        grid-column: 1 / -1;
     }
 
-
-    .btn {
-
-        min-height: 44px;
-
+    .footer-logo {
+        width: 135px;
     }
 
+    .footer-tagline {
+        max-width: 280px;
+        font-size: .75rem;
+    }
 
-    .section-subtitle {
+    .footer-column-title {
+        margin-bottom: .85rem;
+        font-size: .85rem;
+    }
 
-        margin-bottom: 1rem;
+    .footer-links {
+        gap: .5rem;
+    }
 
+    .footer-links a {
+        font-size: .8rem;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-newsletter {
+        grid-column: 1 / -1;
+
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-light);
+    }
+
+    .footer-newsletter-description {
+        max-width: 320px;
+        font-size: .85rem;
+    }
+
+    .newsletter-form {
+        max-width: 100%;
+    }
+
+    .footer-newsletter-note {
+        margin-top: 1.25rem;
+        font-size: .75rem;
+    }
+
+    .footer-bottom {
+        width: calc(100% - 40px);
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        gap: 1rem;
+
+        padding: 1.25rem 0;
+    }
+
+    .footer-copyright {
+        font-size: .68rem;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        gap: .65rem 1rem;
+    }
+
+    .footer-bottom-links a {
+        font-size: .68rem;
     }
 
 }
 
 
 /* =========================================================
-   RESPONSIVE — SMALL MOBILE
+   MÓVILES PEQUEÑOS
    ========================================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
 
-    :root {
-
-        --section-padding: 3.5rem;
-
-        --section-padding-small: 3rem;
-
+    .header .container {
+        padding-inline: .75rem;
     }
 
-
-    .container,
-    .container-wide,
-    .section-container {
-
-        width: min(88%, var(--container-width));
-
+    .header > .container > a img {
+        height: 27px;
     }
 
-
-    .btn {
-
-        width: 100%;
-
+    .navbar {
+        width: 90vw;
+        padding-inline: 1rem;
     }
 
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .footer-brand,
+    .footer-newsletter {
+        grid-column: auto;
+    }
+
+    .footer-logo {
+        width: 125px;
+    }
+
+    .footer-bottom-links {
+        gap: .65rem .85rem;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .navbar,
+    .navbar-link,
+    .navbar-link .icon,
+    .navbar-link .text,
+    .navigation-login,
+    .navigation-register,
+    .navigation-register i,
+    .footer-social,
+    .footer-links a,
+    .footer-bottom-links a,
+    .newsletter-form,
+    .newsletter-submit {
+        transition: none !important;
+    }
+
+}
+
+.menu-toggle.active {
+    display: none;
+}
+
+.navbar .close-menu {
+    display: none;
+}
+
+.navbar.active .close-menu {
+    display: inline-flex;
 }

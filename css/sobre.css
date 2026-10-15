@@ -961,3 +961,796 @@
     border-color: var(--green-lime);
     transform: rotate(-20deg);
 }
+
+
+
+
+/* =========================================
+   RESPONSIVE — ABOUT
+========================================= */
+
+.about-story,
+.about-universe,
+.about-purpose,
+.about-services,
+.team-section,
+.about-closing {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.about-story-container,
+.about-universe-container,
+.about-purpose-container,
+.about-services-container,
+.team-grid,
+.about-closing-container {
+    min-width: 0;
+}
+
+.about-story-content,
+.about-story-nous,
+.about-purpose-block,
+.about-services-container > *,
+.team-member {
+    min-width: 0;
+}
+
+.about-story-title,
+.about-universe-title,
+.about-purpose-title,
+.about-services-title,
+.team-title,
+.about-closing-title {
+    overflow-wrap: break-word;
+}
+
+/* =========================================
+   LAPTOPS — 1200px
+========================================= */
+
+@media (max-width: 1200px) {
+
+    /* ABOUT STORY */
+    .about-story-container {
+        grid-template-columns:
+            minmax(0, 1.2fr)
+            minmax(260px, 0.8fr);
+        gap: 3rem;
+    }
+
+    .about-story-nous {
+        padding-left: 1.75rem;
+    }
+
+    /* UNIVERSE */
+    .about-universe-container {
+        min-height: 540px;
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        gap: 2rem;
+    }
+
+    .about-universe-visual {
+        min-height: 420px;
+    }
+
+    .universe-node-icon i {
+        width: 50px;
+        height: 50px;
+    }
+
+    .universe-node {
+        font-size: 0.65rem;
+    }
+
+    /* PURPOSE */
+    .about-purpose-block {
+        padding-right: 2rem;
+    }
+
+    .about-purpose-block-vision {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+
+    .about-purpose-principles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 2rem;
+    }
+
+    .purpose-principle:nth-child(3) {
+        padding-left: 0;
+        border-left: 0;
+    }
+
+    /* SERVICES */
+    .about-services-container {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+        gap: 2.5rem;
+    }
+
+    .about-services-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .service-item {
+        min-height: 230px;
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .service-item:nth-child(2n) {
+        border-right: 0;
+    }
+
+    /* TEAM */
+    .team-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .team-member {
+        padding-inline: 1.25rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .team-member:nth-child(4) {
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .team-member-photo-wrapper {
+        width: clamp(130px, 15vw, 180px);
+    }
+
+    .team-member-role,
+    .team-member-description {
+        min-height: 0;
+    }
+
+    /* CLOSING */
+    .about-closing-container {
+        gap: 2rem;
+    }
+
+    .about-closing-decoration {
+        flex-basis: 220px;
+        width: 220px;
+        transform: scale(0.85);
+        transform-origin: center right;
+    }
+}
+
+/* =========================================
+   TABLETS — 900px
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* ABOUT STORY */
+    .about-story {
+        padding: 3.5rem 0;
+    }
+
+    .about-story-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.5rem;
+    }
+
+    .about-story-content,
+    .about-story-description,
+    .about-story-nous-description {
+        max-width: 100%;
+    }
+
+    .about-story-nous {
+        padding: 1.5rem 0 0 1.5rem;
+        border-left: 2px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .about-story-nous-word {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+    }
+
+    /* UNIVERSE */
+    .about-universe-container {
+        min-height: auto;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+        padding-block: 4rem;
+    }
+
+    .about-universe-content {
+        max-width: 700px;
+    }
+
+    .about-universe-title {
+        font-size: var(--fs-h1);
+    }
+
+    .about-universe-description {
+        max-width: 650px;
+    }
+
+    .about-universe-visual {
+        width: 100%;
+        min-height: 0;
+        padding: 1rem 0;
+    }
+
+    .universe-system {
+        width: min(100%, 520px);
+    }
+
+    /* PURPOSE */
+    .about-purpose {
+        padding: 3.5rem 0;
+    }
+
+    .about-purpose-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3rem;
+    }
+
+    .about-purpose-block {
+        padding-right: 0;
+    }
+
+    .about-purpose-block-vision {
+        padding: 2.5rem 0 0;
+        border-left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .about-purpose-title {
+        margin-top: 1.5rem;
+    }
+
+    .about-purpose-description {
+        max-width: 700px;
+    }
+
+    .about-purpose-principles {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0;
+    }
+
+    .purpose-principle {
+        padding-right: 1rem;
+    }
+
+    .purpose-principle + .purpose-principle {
+        padding-left: 1rem;
+    }
+
+    .purpose-principle:nth-child(3) {
+        padding-left: 1rem;
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    /* SERVICES */
+    .about-services {
+        padding: 3.5rem 0;
+    }
+
+    .about-services-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.5rem;
+    }
+
+    .about-services-description {
+        max-width: 700px;
+    }
+
+    .about-services-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .service-item {
+        min-height: 210px;
+    }
+
+    /* TEAM */
+    .team-section {
+        padding: 4.5rem 0;
+    }
+
+    .team-header {
+        margin-bottom: 3rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .team-member {
+        padding: 1.75rem 1.5rem 0;
+    }
+
+    .team-member:nth-child(3),
+    .team-member:nth-child(5) {
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .team-member-photo-wrapper {
+        width: clamp(140px, 22vw, 190px);
+    }
+
+    .team-member-name {
+        font-size: 1.2rem;
+    }
+
+    .team-member-description {
+        font-size: 0.78rem;
+    }
+
+    /* CLOSING */
+    .about-closing-container {
+        min-height: 280px;
+        gap: 1rem;
+    }
+
+    .about-closing-decoration {
+        flex-basis: 160px;
+        width: 160px;
+        transform: scale(0.7);
+        transform-origin: center right;
+    }
+}
+
+/* =========================================
+   MÓVILES — 600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* ABOUT STORY */
+    .about-story {
+        padding: 3rem 0;
+    }
+
+    .about-story-container {
+        gap: 2rem;
+    }
+
+    .about-story-title,
+    .about-purpose-title,
+    .about-services-title,
+    .team-title,
+    .about-closing-title {
+        line-height: 1.05;
+    }
+
+    .about-story-title {
+        margin-top: 1rem;
+    }
+
+    .about-story-description {
+        margin-top: 1.25rem;
+    }
+
+    .about-story-description p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .about-story-nous {
+        padding: 1.25rem 0 0 1rem;
+    }
+
+    .about-story-nous-label {
+        font-size: 0.85rem;
+    }
+
+    .about-story-nous-description {
+        font-size: 0.9rem;
+    }
+
+    .about-story-nous-word {
+        margin-top: 1.5rem;
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+    }
+
+    /* UNIVERSE */
+    .about-universe-container {
+        padding-block: 3rem;
+        gap: 1rem;
+    }
+
+    .about-universe-title {
+        margin-top: 1rem;
+        font-size: clamp(2.5rem, 10vw, 3.7rem);
+        line-height: 0.98;
+    }
+
+    .about-universe-description {
+        margin-top: 1.25rem;
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .about-universe-visual {
+        padding: 0.5rem 0;
+    }
+
+    .universe-system {
+        width: 100%;
+    }
+
+    .universe-center {
+        gap: 0.4rem;
+    }
+
+    .universe-center-logo {
+        width: clamp(65px, 17vw, 90px);
+        height: clamp(65px, 17vw, 90px);
+    }
+
+    .universe-center span {
+        font-size: 0.65rem;
+    }
+
+    .universe-node {
+        gap: 0.35rem;
+        font-size: clamp(0.48rem, 1.8vw, 0.62rem);
+        letter-spacing: 0.04em;
+    }
+
+    .universe-node-icon i {
+        width: clamp(35px, 10vw, 46px);
+        height: clamp(35px, 10vw, 46px);
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .universe-node-technology {
+        top: 14%;
+    }
+
+    .universe-node-marketing {
+        left: 0;
+        top: 61%;
+    }
+
+    .universe-node-talent {
+        right: 0;
+        top: 61%;
+    }
+
+    .universe-orbit-one {
+        width: 88%;
+        height: 48%;
+    }
+
+    .universe-orbit-two {
+        width: 94%;
+        height: 37%;
+    }
+
+    /* PURPOSE */
+    .about-purpose {
+        padding: 3rem 0;
+    }
+
+    .about-purpose-container {
+        gap: 2.5rem;
+    }
+
+    .about-purpose-title {
+        margin-top: 1.25rem;
+    }
+
+    .about-purpose-description {
+        margin-top: 1.25rem;
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .about-purpose-principles {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .purpose-principle,
+    .purpose-principle + .purpose-principle,
+    .purpose-principle:nth-child(3) {
+        padding: 0;
+        border-left: 0;
+    }
+
+    .purpose-principle + .purpose-principle {
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .bi-i {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 0.75rem;
+    }
+
+    .purpose-principle h3 {
+        font-size: 0.9rem;
+    }
+
+    .purpose-principle p {
+        font-size: 0.82rem;
+    }
+
+    .about-purpose-direction {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .about-purpose-direction-point {
+        min-width: 82px;
+        min-height: 82px;
+        padding: 0.65rem;
+        font-size: 0.58rem;
+        text-align: center;
+    }
+
+    .about-purpose-direction i {
+        font-size: 1.15rem;
+    }
+
+    /* SERVICES */
+    .about-services {
+        padding: 3rem 0;
+    }
+
+    .about-services-container {
+        gap: 2rem;
+    }
+
+    .about-services-title {
+        margin-top: 1rem;
+    }
+
+    .about-services-description {
+        margin-top: 1.25rem;
+        font-size: 0.92rem;
+        line-height: 1.7;
+    }
+
+    .about-services-list {
+        grid-template-columns: minmax(0, 1fr);
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .service-item {
+        min-height: 0;
+        padding: 1.5rem 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .service-item-number {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .service-item-icon {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 0.85rem;
+    }
+
+    .service-item-title {
+        font-size: 0.9rem;
+    }
+
+    .service-item-description {
+        font-size: 0.82rem;
+        line-height: 1.65;
+    }
+
+    /* TEAM */
+    .team-section {
+        padding: 3.5rem 0;
+    }
+
+    .team-container {
+        width: 90%;
+    }
+
+    .team-header {
+        margin-bottom: 2rem;
+    }
+
+    .team-title {
+        margin-top: 1rem;
+    }
+
+    .team-introduction {
+        margin-top: 1rem;
+        font-size: 0.92rem;
+        line-height: 1.65;
+    }
+
+    .team-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .team-member,
+    .team-member:first-child,
+    .team-member:nth-child(3),
+    .team-member:nth-child(5) {
+        padding: 1.75rem 0 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .team-member-number {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .team-member-photo-wrapper {
+        width: clamp(140px, 45vw, 180px);
+        margin-bottom: 1.25rem;
+    }
+
+    .team-member-content {
+        text-align: center;
+    }
+
+    .team-member-name {
+        font-size: 1.2rem;
+    }
+
+    .team-member-role {
+        margin-top: 0.4rem;
+        font-size: 0.82rem;
+    }
+
+    .team-member-divider {
+        margin: 0.85rem auto;
+    }
+
+    .team-member-description {
+        max-width: 420px;
+        margin-inline: auto;
+        font-size: 0.8rem;
+        line-height: 1.65;
+    }
+
+    .team-member-socials {
+        margin-top: 1.25rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .team-member-social {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* CLOSING */
+    .about-closing-container {
+        min-height: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-block: 3rem;
+    }
+
+    .about-closing-content {
+        width: 100%;
+    }
+
+    .about-closing-title {
+        margin-top: 1rem;
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .about-closing-subtitle {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .about-closing-container .btn-primary {
+        min-height: 48px;
+        font-size: 0.82rem;
+    }
+
+    .about-closing-decoration {
+        align-self: center;
+        width: 180px;
+        height: 100px;
+        flex: 0 0 100px;
+        margin-top: 0.5rem;
+        transform: scale(0.7);
+        transform-origin: center;
+    }
+}
+
+/* =========================================
+   MÓVILES PEQUEÑOS — 380px
+========================================= */
+
+@media (max-width: 380px) {
+
+    .about-story,
+    .about-purpose,
+    .about-services {
+        padding-block: 2.5rem;
+    }
+
+    .about-story-description p,
+    .about-purpose-description,
+    .about-services-description {
+        font-size: 0.88rem;
+    }
+
+    .about-universe-container {
+        padding-block: 2.5rem;
+    }
+
+    .about-universe-title {
+        font-size: 2.3rem;
+    }
+
+    .universe-node {
+        font-size: 0.45rem;
+    }
+
+    .universe-node-icon i {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    .universe-center-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .universe-center span {
+        font-size: 0.55rem;
+    }
+
+    .about-purpose-direction {
+        gap: 0.5rem;
+    }
+
+    .about-purpose-direction-point {
+        min-width: 72px;
+        min-height: 72px;
+        font-size: 0.52rem;
+    }
+
+    .team-container {
+        width: 92%;
+    }
+
+    .about-closing-container {
+        padding-block: 2.5rem;
+    }
+
+    .about-closing-title {
+        font-size: 2rem;
+    }
+}
+
+/* =========================================
+   ACCESIBILIDAD — MOVIMIENTO REDUCIDO
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .team-member-social,
+    .about-closing-container .btn-primary,
+    .about-closing-container .btn-primary i {
+        transition: none !important;
+    }
+
+    .team-member-social:hover,
+    .about-closing-container .btn-primary:hover {
+        transform: none;
+    }
+}

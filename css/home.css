@@ -2390,3 +2390,905 @@
 }
 
 
+
+
+/* =========================================
+   RESPONSIVE GENERAL — MARKETNUS
+   HERO, PATH, COURSES, BOOTCAMP, NOUS, CTA
+   ========================================= */
+
+
+/* =========================================
+   PORTÁTILES Y PANTALLAS MEDIANAS
+   ========================================= */
+
+@media (max-width: 1200px) {
+
+    /* HERO */
+
+    .hero,
+    .hero-container {
+        min-height: 560px;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        background-position: bottom;
+    }
+
+    .hero-container {
+        width: 90%;
+    }
+
+    .hero-content {
+        width: 58%;
+    }
+
+    .hero-title {
+        font-size: clamp(3.2rem, 5.5vw, 4.5rem);
+    }
+
+    .hero-message {
+        right: 0;
+        top: 8%;
+    }
+
+    .hero-description {
+        color: var(--charcoal);
+    }
+
+    .hero .subtitle-marker {
+        padding: 2rem;
+        margin-bottom: -2.5rem;
+    }
+
+
+    /* PATH */
+
+    .section-container.path {
+        width: 90%;
+        grid-template-columns: minmax(0, 40%) minmax(0, 60%);
+    }
+
+    .path-orbit {
+        width: 125%;
+        bottom: 150px;
+    }
+
+    .path-orbit-system {
+        width: min(100%, 580px);
+    }
+
+    .path-title,
+    .path-intro .section-title {
+        font-size: clamp(2.4rem, 4vw, 3.8rem);
+    }
+
+
+    /* COURSES */
+
+    .courses-section {
+        padding: 5rem 4%;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .course-card-image {
+        height: 220px;
+    }
+
+
+    /* BOOTCAMP */
+
+    .bootcamp-container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .bootcamp-title,
+    .bootcamp-main-link {
+        font-size: clamp(2.2rem, 4vw, 3.5rem);
+    }
+
+    .bootcamp-features {
+        padding-left: 1rem;
+    }
+
+
+    /* NOUS / ARTICLES */
+
+    .nous-container {
+        width: 90%;
+        grid-template-columns: 28% minmax(0, 72%);
+        gap: 1.5rem;
+    }
+
+    .articles-grid {
+        gap: 0.75rem;
+    }
+
+    .article-card-content {
+        padding: 0.8rem;
+    }
+
+    .article-card-title {
+        font-size: 0.76rem;
+    }
+
+    .article-card-excerpt {
+        font-size: 0.66rem;
+    }
+}
+
+
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    /* HERO */
+
+    .hero,
+    .hero-container {
+        min-height: 520px;
+    }
+
+    .hero {
+        background-attachment: scroll;
+        background-position: 60% center;
+        background-image: url("/assets/images/hero-responsive.jpg");
+    }
+
+    .hero-container {
+        width: 88%;
+    }
+
+    .hero-content {
+        width: 70%;
+        max-width: 600px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 6.5vw, 4rem);
+        line-height: 0.98;
+    }
+
+    .hero-description {
+        max-width: 440px;
+        font-size: 0.95rem;
+    }
+
+    .hero-message {
+        top: auto;
+        right: 0;
+        bottom: 2rem;
+        transform: none;
+        gap: 0.65rem;
+    }
+
+    .hero-message-line {
+        height: 50px;
+    }
+
+    .hero-message p {
+        font-size: 0.8rem;
+    }
+
+
+    /* PATH */
+
+    .path-section {
+        padding: 4rem 0;
+    }
+
+    .section-container.path {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+        min-height: auto;
+    }
+
+    .path-intro {
+        width: 100%;
+        max-width: 620px;
+    }
+
+    .path-title,
+    .path-intro .section-title {
+        max-width: 600px;
+        font-size: clamp(2.5rem, 6vw, 3.8rem);
+    }
+
+    .path-intro .section-description {
+        max-width: 520px;
+    }
+
+    .path-orbit {
+        width: 100%;
+        height: auto;
+        bottom: auto;
+        margin: 0 auto;
+    }
+
+    .path-orbit-system {
+        width: min(100%, 620px);
+    }
+
+    .path-orbit-label {
+        font-size: 0.72rem;
+    }
+
+
+    /* COURSES */
+
+    .courses-section {
+        padding: 4.5rem 5%;
+    }
+
+    .courses-section .section-header {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .courses-section .section-subtitle {
+        margin-right: 0;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .course-card-image {
+        height: 190px;
+    }
+
+    .course-card-content {
+        padding: 1.1rem;
+    }
+
+    .course-card-title {
+        font-size: 1.15rem;
+    }
+
+    .course-card-description {
+        max-width: 100%;
+    }
+
+    .course-card-footer {
+        gap: 0.5rem;
+        padding-top: 1.5rem;
+    }
+
+
+    /* BOOTCAMP */
+
+    .bootcamp-section {
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .bootcamp-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 4rem 0;
+    }
+
+    .bootcamp-content {
+        max-width: 600px;
+    }
+
+    .bootcamp-features {
+        padding-left: 0;
+    }
+
+    .bootcamp-feature-list {
+        gap: 1.1rem;
+    }
+
+    .bootcamp-feature-list li {
+        font-size: 0.9rem;
+        line-height: 1.35;
+    }
+
+
+    /* NOUS / ARTICLES */
+
+    .nous-section {
+        padding: 4rem 0;
+    }
+
+    .nous-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .nous-introduction {
+        max-width: 620px;
+    }
+
+    .nous-title {
+        max-width: 550px;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+    }
+
+    .nous-description {
+        max-width: 520px;
+    }
+
+    .articles-wrapper {
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .articles-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.75rem;
+    }
+
+    .article-card-image {
+        height: 130px;
+    }
+
+    .article-card-content {
+        padding: 0.8rem;
+    }
+
+    .article-card-meta {
+        flex-wrap: wrap;
+        font-size: 0.56rem;
+    }
+
+    .article-card-title {
+        font-size: 0.75rem;
+    }
+
+    .article-card-excerpt {
+        font-size: 0.67rem;
+    }
+
+
+    /* CTA */
+
+    .cta-section {
+        min-height: 260px;
+    }
+
+    .cta-title {
+        font-size: clamp(2.4rem, 6vw, 3.8rem);
+    }
+
+    .cta-decoration {
+        opacity: 0.55;
+    }
+}
+
+
+/* =========================================
+   MÓVILES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        background-attachment: scroll;
+        background-position: 62% center;
+    }
+
+    .hero-container {
+        width: 88%;
+        min-height: auto;
+        padding: 5rem 0 7rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero .section-subtitle {
+        margin-bottom: 1rem;
+    }
+
+    .hero .subtitle-marker {
+        padding: 1.2rem 1.5rem;
+        margin-bottom: -1.5rem;
+        font-size: 0.65rem;
+    }
+
+    .hero .subtitle-marker::before {
+        width: 25px;
+    }
+
+    .hero .subtitle-marker::after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .hero .dot-1,
+    .hero .dot-2 {
+        font-size: 1.15rem;
+        margin: 0 0.1rem;
+    }
+
+    .hero-title {
+        max-width: 100%;
+        font-size: clamp(2.6rem, 11vw, 3.8rem);
+        line-height: 1;
+        letter-spacing: -0.045em;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        margin-top: 1.25rem;
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .hero-btns {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .hero .btn-primary {
+        min-height: 46px;
+        padding: 0 1.25rem;
+    }
+
+    .hero-secondary-action {
+        min-height: 40px;
+    }
+
+    .hero-message {
+        left: 0;
+        right: auto;
+        bottom: 1.5rem;
+        gap: 0.6rem;
+    }
+
+    .hero-message-line {
+        height: 42px;
+    }
+
+    .hero-message p {
+        font-size: 0.72rem;
+    }
+
+
+    /* PATH */
+
+    .path-section {
+        padding: 3.5rem 0;
+    }
+
+    .section-container.path {
+        width: 88%;
+        gap: 2rem;
+    }
+
+    .path-intro .section-subtitle {
+        margin-bottom: 1rem;
+        gap: 0.5rem;
+        font-size: 0.65rem;
+    }
+
+    .path-title,
+    .path-intro .section-title {
+        font-size: clamp(2.3rem, 10vw, 3.4rem);
+        line-height: 1;
+    }
+
+    .path-intro .section-description {
+        margin-top: 1.1rem;
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .path-intro .text-link {
+        margin-top: 1.4rem;
+    }
+
+    /* Reducir el sistema orbital para evitar desbordamientos */
+    .path-orbit {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .path-orbit-system {
+        width: 100%;
+        max-width: 480px;
+        aspect-ratio: 1 / 0.85;
+    }
+
+    .path-orbit-ring--outer {
+        width: 100%;
+        height: 65%;
+    }
+
+    .path-orbit-ring--middle {
+        width: 76%;
+        height: 51%;
+    }
+
+    .path-orbit-ring--inner {
+        width: 48%;
+        height: 33%;
+    }
+
+    .path-orbit-label {
+        font-size: clamp(0.55rem, 2.3vw, 0.68rem);
+    }
+
+    .path-orbit-item {
+        gap: 0.35rem;
+    }
+
+    .path-orbit-point {
+        width: 7px;
+        height: 7px;
+        flex-basis: 7px;
+        box-shadow: 0 0 0 3px rgba(168, 255, 0, 0.13);
+    }
+
+    .path-orbit-center {
+        width: 48px;
+        height: 48px;
+    }
+
+    .path-orbit-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .path-orbit-logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .path-orbit-ring--middle::before {
+        top: 10px;
+    }
+
+    .path-orbit-ring--middle::after {
+        bottom: 10px;
+    }
+
+
+    /* COURSES */
+
+    .courses-section {
+        padding: 3.5rem 6%;
+    }
+
+    .courses-section .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .courses-section .section-subtitle {
+        font-size: 0.65rem;
+        gap: 0.5rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .course-card-image {
+        height: clamp(190px, 58vw, 280px);
+    }
+
+    .course-card-content {
+        padding: 1.2rem;
+    }
+
+    .course-card-meta {
+        margin-bottom: 1rem;
+    }
+
+    .course-card-title {
+        max-width: 100%;
+        font-size: 1.3rem;
+        line-height: 1.05;
+    }
+
+    .course-card-description {
+        max-width: 100%;
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+    .course-card-footer {
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+
+    .course-price {
+        font-size: 0.95rem;
+    }
+
+
+    /* BOOTCAMP */
+
+    .bootcamp-section {
+        min-height: auto;
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    .bootcamp-container {
+        width: 88%;
+        min-height: auto;
+        padding: 3.5rem 0;
+        gap: 2rem;
+    }
+
+    .bootcamp-content .section-subtitle {
+        margin-bottom: 1rem;
+        font-size: 0.65rem;
+    }
+
+    .bootcamp-title {
+        font-size: clamp(2.2rem, 9vw, 3.3rem);
+        line-height: 1;
+    }
+
+    .bootcamp-main-link {
+        flex-wrap: wrap;
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .bootcamp-features {
+        width: 100%;
+    }
+
+    .bootcamp-feature-list {
+        gap: 1rem;
+    }
+
+    .bootcamp-feature-list li {
+        align-items: flex-start;
+        gap: 0.65rem;
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .bootcamp-features .button--outline {
+        max-width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+    }
+
+
+    /* NOUS / ARTICLES */
+
+    .nous-section {
+        padding: 3.5rem 0;
+    }
+
+    .nous-container {
+        width: 88%;
+        gap: 1.75rem;
+    }
+
+    .nous-introduction .section-subtitle {
+        margin-bottom: 1rem;
+        font-size: 0.65rem;
+    }
+
+    .nous-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 8.5vw, 2.7rem);
+        line-height: 1.03;
+    }
+
+    .nous-description {
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .articles-wrapper {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .article-card-image {
+        height: clamp(170px, 52vw, 240px);
+    }
+
+    .article-card-content {
+        padding: 1rem;
+    }
+
+    .article-card-meta {
+        margin-bottom: 0.75rem;
+        font-size: 0.62rem;
+    }
+
+    .article-card-title {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .article-card-excerpt {
+        margin-top: 0.75rem;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .article-card-footer {
+        padding-top: 1rem;
+        font-size: 0.65rem;
+    }
+
+    .articles-next {
+        align-self: flex-end;
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+
+    /* CTA */
+
+    .cta-section {
+        min-height: 250px;
+    }
+
+    .cta-container {
+        width: 90%;
+        padding: 3.5rem 0.5rem;
+    }
+
+    .cta-title {
+        font-size: clamp(2.2rem, 9vw, 3.3rem);
+        line-height: 1;
+        margin-bottom: 1.4rem;
+    }
+
+    .cta-section .btn-primary {
+        min-width: 175px;
+        min-height: 46px;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.78rem;
+    }
+
+    .cta-decoration {
+        opacity: 0.3;
+        transform: scale(0.65);
+        transform-origin: center;
+    }
+}
+
+
+/* =========================================
+   MÓVILES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+    .hero-container,
+    .section-container.path,
+    .bootcamp-container,
+    .nous-container {
+        width: 90%;
+    }
+
+    .hero-container {
+        padding-top: 4rem;
+        padding-bottom: 6.5rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.25rem, 10.5vw, 2.8rem);
+    }
+
+    .hero-btns {
+        gap: 0.75rem;
+    }
+
+    .hero .btn-primary {
+        font-size: 0.7rem;
+    }
+
+    .path-title,
+    .path-intro .section-title {
+        font-size: 2.2rem;
+    }
+
+    .path-orbit-label {
+        font-size: 0.52rem;
+    }
+
+    .path-orbit-point {
+        width: 6px;
+        height: 6px;
+        flex-basis: 6px;
+    }
+
+    .courses-section {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .course-card-title {
+        font-size: 1.15rem;
+    }
+
+    .bootcamp-title {
+        font-size: 2.1rem;
+    }
+
+    .bootcamp-main-link {
+        font-size: 1.9rem;
+    }
+
+    .nous-title {
+        font-size: 1.95rem;
+    }
+
+    .cta-title {
+        font-size: 2.1rem;
+    }
+}
+
+
+/* =========================================
+   ACCESIBILIDAD
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero,
+    .bootcamp-section {
+        background-attachment: scroll;
+    }
+
+    .path-orbit-item {
+        animation: none;
+    }
+
+    .course-card,
+    .course-card-image img,
+    .article-card,
+    .article-card-image img,
+    .hero .btn-primary,
+    .cta-section .btn-primary {
+        transition: none;
+    }
+}
+
+
+.menu-toggle.active {
+    display: none;
+}
+
+.navbar .close-menu {
+    display: none;
+}
+
+.navbar.active .close-menu {
+    display: inline-flex;
+}
